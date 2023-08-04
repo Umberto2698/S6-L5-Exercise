@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Esercitazione sesta settimana</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" />
+  </head>
+  <body class="bg-dark text-white">
+    <div class="ms-3">
+      <nav class="navbar navbar-expand-lg mb-2">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="./Netflix-assets/assets/netflix_logo.png" alt="Bootstrap" width="80" height="30"
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item" style="--bs-nav-link-font-size: 0.6rem">
+                <a class="nav-link active text-white-50" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item" style="--bs-nav-link-font-size: 0.6rem">
+                <a class="nav-link text-white" href="#">TV Shows</a>
+              </li>
+              <li class="nav-item" style="--bs-nav-link-font-size: 0.6rem">
+                <a class="nav-link text-white-50" href="#">Movies</a>
+              </li>
+              <li class="nav-item" style="--bs-nav-link-font-size: 0.6rem">
+                <a class="nav-link text-white-50" href="#">Recently Added</a>
+              </li>
+              <li class="nav-item" style="--bs-nav-link-font-size: 0.6rem">
+                <a class="nav-link text-white-50" href="#">My list</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <button class="btn text-white" type="submit"><i class="bi bi-search"></i></button>
+            </form>
+            <ul class="navbar-nav mb-2 mb-lg-0">
+              <li class="nav-item d-flex align-items-center" style="--bs-nav-link-font-size: 0.6rem">
+                <a class="nav-link text-white" href="#">KIDS</a>
+              </li>
+              <li class="nav-item d-flex align-items-center">
+                <button class="btn text-white">
+                  <i class="bi bi-bell-fill"></i>
+                </button>
+              </li>
+              <li class="nav-item dropdown d-flex align-items-center">
+                <a
+                  class="nav-link dropdown-toggle text-white"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  <img src="./Netflix-assets/assets/avatar.png" alt="Avatar" width="30" height="30" />
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div class="container-fluid">
+        <header class="d-flex mb-3">
+          <div class="d-flex align-items-center me-auto">
+            <h1 class="me-3 fs-3">TV Shows</h1>
+            <nav class="navbar navbar-expand-lg">
+              <button
+                class="btn rounded-0 bg-black btn-outline-secondary"
+                style="--bs-btn-padding-y: 0rem; --bs-btn-padding-x: 0rem; --bs-btn-font-size: 0.7rem"
+              >
+                <ul class="navbar-nav mb-2 mb-lg-0">
+                  <li class="nav-item d-flex align-items-center text-white"><span class="ms-2 me-3">Genres</span></li>
+                  <li class="nav-item dropdown d-flex align-items-center">
+                    <a
+                      class="nav-link dropdown-toggle text-white p-1"
+                      href="#"
+                      role="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><hr class="dropdown-divider" /></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </button>
+            </nav>
+          </div>
+          <div class="d-flex">
+            <form class="d-flex align-items-center" role="search">
+              <button
+                class="btn rounded-0 btn-outline-secondary text-white"
+                type="submit"
+                style="
+                  --bs-btn-padding-y: 0rem;
+                  --bs-btn-padding-x: 0.3rem;
+                  --bs-btn-font-size: 0.7rem;
+                  height: 20px;
+                  width: 30px;
+                "
+              >
+                <i class="bi bi-list"></i>
+              </button>
+              <button
+                class="btn rounded-0 btn-outline-secondary text-white"
+                type="submit"
+                style="
+                  --bs-btn-padding-y: 0rem;
+                  --bs-btn-padding-x: 0.3rem;
+                  --bs-btn-font-size: 0.5rem;
+                  height: 20px;
+                  width: 30px;
+                "
+              >
+                <i class="bi bi-arrows-fullscreen"></i>
+              </button>
+            </form>
+          </div>
+        </header>
+      </div>
+      <div class="container-fluid" style="margin-bottom: 5rem">
+        <main>
+          <section>
+            <h4 class="mb-2 fs-6">Trending Now</h4>
+            <div class="row mb-5 gx-1">
+              <div class="col-2">
+                <img class="w-100" src="./Netflix-assets/assets/media/media0.webp" alt="Sherlock" />
+              </div>
+              <div class="col-2">
+                <img class="w-100" src="./Netflix-assets/assets/media/media1.jpg" alt="Sherlock" />
+              </div>
+              <div class="col-2">
+                <img class="w-100" src="./Netflix-assets/assets/media/media2.webp" alt="Sherlock" />
+              </div>
+              <div class="col-2">
+                <img class="w-100" src="./Netflix-assets/assets/media/media3.webp" alt="Sherlock" />
+              </div>
+              <div class="col-2">
+                <img class="w-100" src="./Netflix-assets/assets/media/media4.jpg" alt="Sherlock" />
+              </div>
+              <div class="col-2">
+                <img class="w-100" src="./Netflix-assets/assets/media/media5.webp" alt="Sherlock" />
+              </div>
+            </div>
+          </section>
+          <h4 class="mb-2 fs-6">Watch It again</h4>
+          <div class="row mb-5 gx-1">
+            <div class="col-2">
+              <img class="w-100" src="./Netflix-assets/assets/media/media6.jpg" alt="Sherlock" />
+            </div>
+            <div class="col-2">
+              <img class="w-100" src="./Netflix-assets/assets/media/media7.webp" alt="Sherlock" />
+            </div>
+            <div class="col-2">
+              <img class="w-100" src="./Netflix-assets/assets/media/media8.webp" alt="Sherlock" />
+            </div>
+            <div class="col-2">
+              <img class="w-100" src="./Netflix-assets/assets/media/media9.jpg" alt="Sherlock" />
+            </div>
+            <div class="col-2">
+              <img class="w-100" src="./Netflix-assets/assets/media/media10.jpg" alt="Sherlock" />
+            </div>
+            <div class="col-2">
+              <img class="w-100" src="./Netflix-assets/assets/media/media11.jpg" alt="Sherlock" />
+            </div>
+          </div>
+          <section>
+            <h4 class="mb-2 fs-6">New Releases</h4>
+            <div class="row mb-5 gx-1">
+              <div class="col-2">
+                <img class="w-100" src="./Netflix-assets/assets/media/media12.jpg" alt="Sherlock" />
+              </div>
+              <div class="col-2">
+                <img class="w-100" src="./Netflix-assets/assets/media/media13.jpg" alt="Sherlock" />
+              </div>
+              <div class="col-2">
+                <img class="w-100" src="./Netflix-assets/assets/media/media14.webp" alt="Sherlock" />
+              </div>
+              <div class="col-2">
+                <img class="w-100" src="./Netflix-assets/assets/media/media15.jpg" alt="Sherlock" />
+              </div>
+              <div class="col-2">
+                <img class="w-100" src="./Netflix-assets/assets/media/media16.webp" alt="Sherlock" />
+              </div>
+              <div class="col-2">
+                <img class="w-100" src="./Netflix-assets/assets/media/media17.jpg" alt="Sherlock" />
+              </div>
+            </div>
+          </section>
+          <section></section>
+        </main>
+      </div>
+      <div class="container" style="padding-right: 10rem; padding-left: 12rem">
+        <div class="d-flex flex-column">
+          <div class="d-flex mb-1">
+            <button class="btn text-white-50 fs-5 ps-0"><i class="bi bi-facebook"></i></button>
+            <button class="btn text-white-50 fs-5"><i class="bi bi-instagram"></i></button>
+            <button class="btn text-white-50 fs-5"><i class="bi bi-twitter"></i></button>
+            <button class="btn text-white-50 fs-5"><i class="bi bi-youtube"></i></button>
+          </div>
+          <div class="mb-3">
+            <div class="row row-cols-4 gy-2">
+              <div class="col text-white-50" style="font-size: 0.6rem">Audio and Subtitles</div>
+              <div class="col text-white-50" style="font-size: 0.6rem">Audio Description</div>
+              <div class="col text-white-50" style="font-size: 0.6rem">Help Center</div>
+              <div class="col text-white-50" style="font-size: 0.6rem">Gift Cards</div>
+              <div class="col text-white-50" style="font-size: 0.6rem">Media Center</div>
+              <div class="col text-white-50" style="font-size: 0.6rem">Investor Relations</div>
+              <div class="col text-white-50" style="font-size: 0.6rem">Jobs</div>
+              <div class="col text-white-50" style="font-size: 0.6rem">Terms of Use</div>
+              <div class="col text-white-50" style="font-size: 0.6rem">Privacy</div>
+              <div class="col text-white-50" style="font-size: 0.6rem">Legal Notices</div>
+              <div class="col text-white-50" style="font-size: 0.6rem">Cookie Preferences</div>
+              <div class="col text-white-50" style="font-size: 0.6rem">Corporate Information</div>
+              <div class="col text-white-50" style="font-size: 0.6rem">Contact US</div>
+            </div>
+          </div>
+          <div class="mb-2">
+            <button
+              class="btn rounded-0 btn-outline-secondary text-white-50 text-center"
+              style="--bs-btn-padding-y: 0.2rem; --bs-btn-padding-x: 0.2rem; --bs-btn-font-size: 0.6rem"
+            >
+              Service Code
+            </button>
+          </div>
+          <div>
+            <p class="text-white-50" style="font-size: 0.5rem">
+              &copy; 1997-2019 Netflix, Inc. &lcub;i-0d00fcda2fdf9c0de&rcub;
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
