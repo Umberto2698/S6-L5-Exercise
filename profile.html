@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Esercitazione sesta settimana</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" />
+    <link rel="stylesheet" href="./profile.css" />
+  </head>
+  <body class="text-white-50">
+    <nav class="navbar mb-2">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="./Netflix-assets/assets/netflix_logo.png" alt="Bootstrap" width="100" height="50"
+        /></a>
+      </div>
+    </nav>
+    <div class="container pb-4">
+      <div class="d-flex flex-column profile">
+        <h1 class="border-bottom border-bottom-secondary text-white">Edit Profile</h1>
+        <div class="d-flex">
+          <div class="me-3 position-relative" style="height: 100px">
+            <div
+              class="position-absolute rounded-circle border border-white bg-dark text-white text-center"
+              style="
+                width: 20px;
+                height: 20px;
+                font-size: 8px;
+                bottom: 5px;
+                left: 5px;
+                padding-top: 3px;
+                cursor: pointer;
+              "
+            >
+              <i class="bi bi-pencil-fill"></i>
+            </div>
+            <img src="./Netflix-assets/assets/avatar.png" height="100" alt="Avatar" />
+          </div>
+          <div>
+            <div class="d-flex flex-column border-bottom border-bottom-secondary mb-3">
+              <div class="mb-3 me-4 px-2 py-1" style="background-color: #666666">
+                <p class="m-0 text-white">Strive Student</p>
+              </div>
+              <div class="mb-3">
+                <p class="my-1">Language:</p>
+                <button
+                  class="btn rounded-0 bg-black btn-outline-secondary border-top border-top-white"
+                  style="--bs-btn-padding-y: 0rem; --bs-btn-padding-x: 0rem; --bs-btn-font-size: 0.7rem"
+                >
+                  <ul class="flex-row navbar-nav mb-lg-0" style="height: 20px">
+                    <li class="nav-item d-flex align-items-center text-white">
+                      <span class="ms-2 me-3">English</span>
+                    </li>
+                    <li class="nav-item dropdown d-flex align-items-center">
+                      <a
+                        class="nav-link dropdown-toggle text-white px-2"
+                        href="#"
+                        role="button"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                      >
+                      </a>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Italian</a></li>
+                        <li><a class="dropdown-item" href="#">Russian</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </button>
+              </div>
+            </div>
+            <div class="d-flex flex-column border-bottom border-bottom-secondary mb-3">
+              <div class="mb-2">
+                <h4 class="fs-6">Maturity Settings:</h4>
+              </div>
+              <div class="mb-2">
+                <span class="p-1 text-white px-2" style="background-color: #333333; font-size: 14px"
+                  >ALL MATURITY RATINGS</span
+                >
+              </div>
+              <div class="mb-1">
+                <p>Show titles of <strong class="text-white">all maturity ratings</strong> for this profile</p>
+              </div>
+              <div class="mb-2">
+                <button
+                  class="btn rounded-0 btn-outline-secondary text-white-50 px-4 mb-3"
+                  style="--bs-btn-font-size: 0.7rem; width: fit-content"
+                >
+                  EDIT
+                </button>
+              </div>
+            </div>
+            <div class="d-flex flex-column">
+              <div class="mb-1">
+                <h4 class="fs-6">Autoplay controls</h4>
+              </div>
+              <div class="d-flex align-items-center mb-4">
+                <label class="containercheck"
+                  >Autoplay next episode in a sereis on all devices.
+                  <input type="checkbox" checked="checked" />
+                  <span class="checkmark"></span>
+                </label>
+              </div>
+              <div class="d-flex flex-wrap mb-4">
+                <label class="containercheck"
+                  >Autoplay previews while browsing on all devices.
+                  <input type="checkbox" checked="checked" />
+                  <span class="checkmark"></span>
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row border-top border-top-secondary pt-3">
+          <div class="col-3 ps-0">
+            <button class="btn rounded-0 btn-outline-secondary bg-white text-black w-100">SAVE</button>
+          </div>
+          <div class="col-4">
+            <button class="btn rounded-0 btn-outline-secondary text-white-50 w-100">CANCEL</button>
+          </div>
+          <div class="col-5">
+            <button class="btn rounded-0 btn-outline-secondary text-white-50 w-100">DELETE PROFILE</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
