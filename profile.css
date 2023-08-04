@@ -5,12 +5,48 @@ nav {
   background: linear-gradient(to bottom, black, #141414);
 }
 
-.profile {
-  padding-left: 25rem;
-  padding-right: 15rem;
-  margin-top: 3rem;
+@media screen and (min-width: 0px) {
+  .profile {
+    padding-left: 0rem;
+    padding-right: 0rem;
+    margin-top: 3rem;
+  }
 }
-
+@media screen and (min-width: 576px) {
+  .profile {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin-top: 3rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  .profile {
+    padding-left: 10rem;
+    padding-right: 4rem;
+    margin-top: 3rem;
+  }
+}
+@media screen and (min-width: 992px) {
+  .profile {
+    padding-left: 19rem;
+    padding-right: 10rem;
+    margin-top: 3rem;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .profile {
+    padding-left: 25rem;
+    padding-right: 15rem;
+    margin-top: 3rem;
+  }
+}
+@media screen and (min-width: 1400px) {
+  .profile {
+    padding-left: 30rem;
+    padding-right: 20rem;
+    margin-top: 3rem;
+  }
+}
 .containercheck {
   display: block;
   position: relative;
